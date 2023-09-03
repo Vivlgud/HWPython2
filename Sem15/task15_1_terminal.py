@@ -16,7 +16,7 @@ def convert_format(input):
             m_2.append(list(m_1))
             m_1.clear()
         else:
-            m_1.append(int(i))
+            m_1.append(float(i))
     return m_2
 
 if __name__ == '__main__':
@@ -41,6 +41,6 @@ if __name__ == '__main__':
         print(f'Такая операция {args.operation} над матрицами не предусмотрена!')
 
     # примеры вызова  из командной строки:
-    # python Homework/Seminar_15/Matrix_terminal.py
-    # python Sem15\task15_1_terminal.py -m_1='111 222 333' -m_2='444 555 666'-operation='+'
-    # python Homework/Seminar_15/Matrix_terminal.py -m_1='124 252 253' -m_2='124 252 253' -operation='='
+    # python Sem15\task15_1_terminal.py
+    # python Sem15\task15_1_terminal.py -m_1='111 222 333' -m_2='333 222 111'
+    # python Sem15\task15_1_terminal.py -m_1='124 252 253' -m_2='124 252 253' -operation='='
